@@ -134,13 +134,13 @@ document.addEventListener('DOMContentLoaded', domReady);
                 }
                 switch (i) {
                     case 0:
-                        image.src = image.src + '/psnerf.png';
+                        image.src = image.src + 'psnerf.png';
                         break;
                     case 1:
-                        image.src = image.src + '/ours.png';
+                        image.src = image.src + 'ours.png';
                         break;
                     case 2:
-                        image.src = image.src + '/rnb_neus.png';
+                        image.src = image.src + 'rnb_neus.png';
                         break;
                 }
             }
