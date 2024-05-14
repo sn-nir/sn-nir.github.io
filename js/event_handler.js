@@ -50,19 +50,19 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (globalModel) {
                     case 0:
-                        image.src = '../assets/rnb_neus/images/cmp_neus/bear/';
+                        image.src = './assets/snnir/images/cmp_diff_views_methods/bear/';
                         break;
                     case 1:
-                        image.src = '../assets/rnb_neus/images/cmp_neus/buddha/';
+                        image.src = './assets/snnir/images/cmp_diff_views_methods/buddha/';
                         break;
                     case 2:
-                        image.src = '../assets/rnb_neus/images/cmp_neus/cow/';
+                        image.src = './assets/snnir/images/cmp_diff_views_methods/cow/';
                         break;
                     case 3:
-                        image.src = '../assets/rnb_neus/images/cmp_neus/pot2/';
+                        image.src = './assets/snnir/images/cmp_diff_views_methods/pot2/';
                         break;
                     case 4:
-                        image.src = '../assets/rnb_neus/images/cmp_neus/reading/';
+                        image.src = './assets/snnir/images/cmp_diff_views_methods/reading/';
                         break;
                 }
                 switch (i) {
@@ -117,30 +117,30 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = '../assets/rnb_neus/images/cmp_methods/bear/';
+                        image.src = './assets/snnir/images/cmp_ps_methods/bear/';
                         break;
                     case 1:
-                        image.src = '../assets/rnb_neus/images/cmp_methods/buddha/';
+                        image.src = './assets/snnir/images/cmp_ps_methods/buddha/';
                         break;
                     case 2:
-                        image.src = '../assets/rnb_neus/images/cmp_methods/cow/';
+                        image.src = './assets/snnir/images/cmp_ps_methods/cow/';
                         break;
                     case 3:
-                        image.src = '../assets/rnb_neus/images/cmp_methods/pot2/';
+                        image.src = './assets/snnir/images/cmp_ps_methods/pot2/';
                         break;
                     case 4:
-                        image.src = '../assets/rnb_neus/images/cmp_methods/reading/';
+                        image.src = './assets/snnir/images/cmp_ps_methods/reading/';
                         break;
                 }
                 switch (i) {
                     case 0:
-                        image.src = image.src + '/kaya.png';
+                        image.src = image.src + '/psnerf.png';
                         break;
                     case 1:
                         image.src = image.src + '/ours.png';
                         break;
                     case 2:
-                        image.src = image.src + '/mvpsnet.png';
+                        image.src = image.src + '/rnb_neus.png';
                         break;
                 }
             }
@@ -163,19 +163,19 @@ document.addEventListener('DOMContentLoaded', domReady);
             // Set the video source based on the specified videoNumber using a switch case
             switch (videoNumber) {
                 case 0:
-                    video.src = "../assets/rnb_neus/videos/cmp/bear.mp4";
+                    video.src = "./assets/snnir/videos/cmp/bear.mp4";
                     break;
                 case 1:
-                    video.src = "../assets/rnb_neus/videos/cmp/buddha.mp4";
+                    video.src = "./assets/snnir/videos/cmp/buddha.mp4";
                     break;
                 case 2:
-                    video.src = "../assets/rnb_neus/videos/cmp/cow.mp4";
+                    video.src = "./assets/snnir/videos/cmp/cow.mp4";
                     break;
                 case 3:
-                    video.src = "../assets/rnb_neus/videos/cmp/pot2.mp4";
+                    video.src = "./assets/snnir/videos/cmp/pot2.mp4";
                     break;
                 case 4:
-                    video.src = "../assets/rnb_neus/videos/cmp/reading.mp4";
+                    video.src = "./assets/snnir/videos/cmp/reading.mp4";
                     break;
             }
     
