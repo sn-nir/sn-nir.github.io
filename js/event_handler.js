@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         function updateVisual() {
             let dics = document.querySelectorAll('.b-dics')[1]
             let sections = dics.getElementsByClassName('b-dics__section')
-            let imagesLength = 2
+            let imagesLength = 3
             for (let i = 0; i < imagesLength; i++) {
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (globalModel) {
@@ -72,18 +72,24 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 1:
                         image.src = image.src + '/ours_';
                         break;
+                    case 2:
+                        image.src = image.src + '/rnb_neus_';
+                        break;
                 }
                 switch (globalView) {
                     case 0:
-                        image.src = image.src + '5.png';
+                        image.src = image.src + '2.png';
                         break;
                     case 1:
-                        image.src = image.src + '10.png';
+                        image.src = image.src + '5.png';
                         break;
                     case 2:
-                        image.src = image.src + '15.png';
+                        image.src = image.src + '10.png';
                         break;
                     case 3:
+                        image.src = image.src + '15.png';
+                        break;
+                    case 4:
                         image.src = image.src + '20.png';
                         break;
                 }
