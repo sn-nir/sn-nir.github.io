@@ -127,12 +127,17 @@
         <!-- Overview -->
         <h5>Overview</h5>
         <div class="text-center;" style="padding-top: 30px; padding-bottom: 30px">
-            <image src="./assets/snnir/images/pipeline.png" class="img-responsive" alt="intro">
+            <image src="./assets/snnir/images/methodology_snnir.png" class="img-responsive" alt="intro">
         </div>
-<!--         <p style="text-align: justify;">
-            The reflectance and normal maps provided for each view by photometric stereo (PS) are fused, by combining volume rendering with a pixel-wise re-parameterization of the inputs using physically-based rendering. 
+        <p style="text-align: justify;">
+            An overview of our method. Our method involves the following steps: (a) We cast camera rays from each pixel into the scene
+             while sampling $m$ points along the ray. (b) For each sampled point, we find the corresponding SDF $\hat{q}$ and
+              rendered RGB color $\hat{c}$ using an SDF and Neural Renderer network, respectively. Then we use volume rendering in a
+               differentiable manner to find the rendered color for each pixel. (c) Finally, we additionally supervise our network with
+                Depth-Normal Consistency loss that enables the 3D reconstruction of intricate geometric details and
+thin structures.
         </p>
-		 -->
+		
         <!-- Comparisons Videos -->
 <!--         <hr style="border-top: 3px double;">
         <h5>Results</h5>
