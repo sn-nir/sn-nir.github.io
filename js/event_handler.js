@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                 }
                 switch (i) {
                     case 0:
-                        image.src = image.src + '/neus_';
+                        image.src = image.src + '/sn_';
                         break;
                     case 1:
                         image.src = image.src + '/ours_';
