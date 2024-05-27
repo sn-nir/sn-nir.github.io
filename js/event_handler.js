@@ -65,6 +65,34 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = './assets/snnir/images/cmp_diff_views_methods/reading/';
                         break;
                 }
+                // switch (i) {
+                //     case 0:
+                //         image.src = image.src + '/neus_';
+                //         break;
+                //     case 1:
+                //         image.src = image.src + '/ours_';
+                //         break;
+                //     case 2:
+                //         image.src = image.src + '/rnb_neus_';
+                //         break;
+                // }
+                // switch (globalView) {
+                //     case 0:
+                //         image.src = image.src + '2.png';
+                //         break;
+                //     case 1:
+                //         image.src = image.src + '5.png';
+                //         break;
+                //     case 2:
+                //         image.src = image.src + '10.png';
+                //         break;
+                //     case 3:
+                //         image.src = image.src + '15.png';
+                //         break;
+                //     case 4:
+                //         image.src = image.src + '20.png';
+                //         break;
+                // }
                 switch (i) {
                     case 0:
                         image.src = image.src + '/neus_';
@@ -72,24 +100,18 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 1:
                         image.src = image.src + '/ours_';
                         break;
-                    case 2:
-                        image.src = image.src + '/rnb_neus_';
-                        break;
                 }
                 switch (globalView) {
                     case 0:
-                        image.src = image.src + '2.png';
-                        break;
-                    case 1:
                         image.src = image.src + '5.png';
                         break;
-                    case 2:
+                    case 1:
                         image.src = image.src + '10.png';
                         break;
-                    case 3:
+                    case 2:
                         image.src = image.src + '15.png';
                         break;
-                    case 4:
+                    case 3:
                         image.src = image.src + '20.png';
                         break;
                 }
