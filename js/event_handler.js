@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = image.src + 'ours.png';
                         break;
                     case 2:
-                        image.src = image.src + 'rnb_neus.png';
+                        image.src = image.src + 'neus.png';
                         break;
                 }
             }
