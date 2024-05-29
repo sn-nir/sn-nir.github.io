@@ -258,8 +258,41 @@ thin structures.
                 <img src="./assets/snnir/images/cmp_diff_views_methods/cow/rnb_neus_2.png" alt="RNb-NeuS">
             </div>
             </div>
+            <div>
+                <li class="nav-item" style="font-size: 16px;">
+                    <a class="nav-link" onclick="changeView(1)">Back</a>
+                </li>
+            </div>
         </div>
 
+
+        <h6>Comparison to <a href="https://turandai.github.io/projects/gaussian_surfels/">Gaussian Surfels</a>(SOTA) on BMVS dataset.</h6>
+
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="objectSceneEventBMVS(0)">Clock</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(1)">Dog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(2)">Durian</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(3)">Jade</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(4)">Man</a>
+                </li>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/snnir/images/cmp_bmvs/clock/gs.png" alt="Gaussian Surfels">
+                <img src="./assets/snnir/images/cmp_bmvs/clock/ours.png" alt="Ours">
+            </div>
+            </div>
+        </div>
 
         <!-- Relighting video -->
         <!-- <hr style="border-top: 3px double;"> -->
