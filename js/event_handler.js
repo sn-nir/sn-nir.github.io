@@ -170,16 +170,16 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/snnir/images/cmp_bmvs/clock/';
+                        image.src = './assets/snnir/images/cmp_bmvs/camera/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/cmp_bmvs/dog/';
+                        image.src = './assets/snnir/images/cmp_bmvs/clock/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/cmp_bmvs/durian/';
+                        image.src = './assets/snnir/images/cmp_bmvs/cow/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/cmp_bmvs/jade/';
+                        image.src = './assets/snnir/images/cmp_bmvs/dog/';
                         break;
                     case 4:
                         image.src = './assets/snnir/images/cmp_bmvs/man/';
