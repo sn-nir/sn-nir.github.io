@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function objectSceneEventBMVS(idx) {
-            let dics = document.querySelectorAll('.b-dics')[0]
+            let dics = document.querySelectorAll('.b-dics')[2]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 2
             for (let i = 0; i < imagesLength; i++) {
