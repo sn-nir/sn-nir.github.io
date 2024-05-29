@@ -206,6 +206,50 @@ document.addEventListener('DOMContentLoaded', domReady);
             }
         }
 
+        function objectSceneEventDTU(idx) {
+            let dics = document.querySelectorAll('.b-dics')[3]
+            let sections = dics.getElementsByClassName('b-dics__section')
+            let imagesLength = 2
+            for (let i = 0; i < imagesLength; i++) {
+                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
+                switch (idx) {
+                    case 0:
+                        image.src = './assets/snnir/images/cmp_dtu/scan24/';
+                        break;
+                    case 1:
+                        image.src = './assets/snnir/images/cmp_dtu/scan69/';
+                        break;
+                    case 2:
+                        image.src = './assets/snnir/images/cmp_dtu/scan106/';
+                        break;
+                    case 3:
+                        image.src = './assets/snnir/images/cmp_dtu/scan114/';
+                        break;
+                    case 4:
+                        image.src = './assets/snnir/images/cmp_dtu/scan122/';
+                        break;
+                }
+                switch (i) {
+                    case 0:
+                        image.src = image.src + 'gs.png';
+                        break;
+                    case 1:
+                        image.src = image.src + 'ours.png';
+                        break;
+                }
+            }
+
+            let scene_list = document.getElementById("object-DTUobjects-recon").children;
+            for (let i = 0; i < scene_list.length; i++) {
+                if (idx == i) {
+                    scene_list[i].children[0].className = "nav-link active"
+                }
+                else {
+                    scene_list[i].children[0].className = "nav-link"
+                }
+            }
+        }
+
         function changeVideo(videoNumber) {
             // Get the video element
             var video = document.getElementById("myVideo");

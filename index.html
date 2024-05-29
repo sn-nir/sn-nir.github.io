@@ -289,6 +289,35 @@ thin structures.
             </div>
         </div>
 
+        
+        <h6>Comparison to <a href="https://turandai.github.io/projects/gaussian_surfels/">Gaussian Surfels</a> (SOTA) on DTU dataset on sparse (three) view setting.</h6>
+
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-DTUobjects-recon">
+                <li class="nav-item active">
+                    <a class="nav-link" onclick="objectSceneEventDTU(0)">Scan 24</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(1)">Scan 69</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(2)">Scan 106</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(3)">Scan 114</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(4)">Scan 122</a>
+                </li>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/snnir/images/cmp_dtu/scan24/gs.png" alt="Gaussian Surfels">
+                <img src="./assets/snnir/images/cmp_dtu/scan24/ours.png" alt="Ours">
+            </div>
+            </div>
+        </div>
+
         <!-- Relighting video -->
         <!-- <hr style="border-top: 3px double;"> -->
 <!--         <h6>Relighting with reflectance maps</h6>
@@ -359,7 +388,7 @@ thin structures.
 		-->
 
         <!-- Citation -->
-        <hr style="border-top: 3px double;">
+        <!-- <hr style="border-top: 3px double;">
         <h5>Citation</h5>
         <div class="row">
             <div id="citation">
@@ -368,14 +397,13 @@ thin structures.
                 &nbsp;&nbsp;author={Anonymous Authors},<br>
                 &nbsp;&nbsp;eprint={xxx.xxxx},<br>
                 &nbsp;&nbsp;archivePrefix={arXiv},<br>
-                <!--&nbsp;&nbsp;booktitle={IEEE Conference on Computer Vision and Pattern Recognition ({CVPR})},<br>-->
                 &nbsp;&nbsp;year={2024}<br>
                 }
             </div> 
-        </div>
-        <div style="text-align:center;">
+        </div> -->
+        <!-- <div style="text-align:center;">
             <button id="copy-button" class="copy-button" onclick="copyTextToClipboard()" >Copy</button>
-        </div>
+        </div> -->
 
         <!-- Acknowledgements -->
 <!--         <hr style="border-top: 3px double;">
