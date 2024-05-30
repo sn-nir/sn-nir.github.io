@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                 }
             }
 
-            let scene_list = document.getElementById("object-bmvsimgs-render").children;
+            let scene_list = document.getElementById("object-bmvsimages-render").children;
             for (let i = 0; i < scene_list.length; i++) {
                 if (idx == i) {
                     scene_list[i].children[0].className = "nav-link active"
