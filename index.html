@@ -9,6 +9,7 @@
 
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel='icon' href='./assets/icons/rnb.png' sizes='472x472'> -->
@@ -21,16 +22,10 @@
     <link rel="stylesheet" href="./js/dics/dics.original.css">
     <script src="./js/dics/dics.original.js"></script>
     <script src="./js/event_handler.js"></script>
-    <script src="./js/bulma-carousel.min.js"></script>
-    <script src="./js/bulma-slider.min.js"></script>
 
     <link href="./neural/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
     <link href="./neural/css-1?family=Inconsolata:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style_neural.css">
-    <link rel="stylesheet" href="./css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./css/bulma.min.css">
-    <!-- <link rel="stylesheet" href="./css/fontawesome.all.min.css"> -->
 </head>
 
 <body lang="en">
@@ -323,77 +318,6 @@ thin structures.
             </div>
         </div>
 
-    <h2 class="title is-3">Rendering</h2>
-    <div class="content has-text-justified">
-      <p>
-        Real-time rendering with high-quality underliying geometry.
-      </p>
-    </div>
-    <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column is-full-width">
-        <div class="content">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-    
-              <div id="rendering1" class="bal-container-small">
-                <div class="bal-after">
-                  <img src="./assets/snnir/images/render_bmvs/camera/normal.png">
-                  <div class="bal-afterPosition afterLabel">
-                    Normal
-                  </div>
-                </div>
-                <div class="bal-before">
-                  <div class="bal-before-inset">
-                  <img src="./assets/snnir/images/render_bmvs/camera/rgb.png">
-                    <div class="bal-beforePosition beforeLabel">
-                      RGB
-                    </div>
-                  </div>
-                </div>
-                <div class="bal-handle">
-                  <span class=" handle-left-arrow"></span>
-                  <span class="handle-right-arrow"></span>
-                </div>
-              </div>
-              <br/>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-full-width">
-        <div class="columns is-centered">
-          <div class="column content">
-
-            <div id="rendering2" class="bal-container-small">
-              <div class="bal-after">
-                <img src="./assets/snnir/images/render_bmvs/man/normal.png">
-                <div class="bal-afterPosition afterLabel">
-                  Normal
-                </div>
-              </div>
-              <div class="bal-before">
-                <div class="bal-before-inset">
-                <img src="./assets/snnir/images/render_bmvs/man/rgb.png">
-                  <div class="bal-beforePosition beforeLabel">
-                    RGB
-                  </div>
-                </div>
-              </div>
-              <div class="bal-handle">
-                <span class=" handle-left-arrow"></span>
-                <span class="handle-right-arrow"></span>
-              </div>
-            </div>
-            <br/>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
         <!-- Relighting video -->
         <!-- <hr style="border-top: 3px double;"> -->
 <!--         <h6>Relighting with reflectance maps</h6>
@@ -500,86 +424,26 @@ thin structures.
     }
 </div>
 
-        
+        <script>  
+            function copyTextToClipboard() {
+                // Get the text with line breaks
+                const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
 
-        
+                // Copy the text to the clipboard
+                navigator.clipboard.writeText(textWithLineBreaks)
+                    .then(() => {
+                        // Optionally, provide some feedback to the user
+                        document.getElementById('copy-button').style.backgroundColor = 'green';
+                        document.getElementById('copy-button').textContent = 'Copied';
+                    })
+                    .catch(err => {
+                        console.error('Unable to copy text to clipboard', err);
+                    });
+                }
+        </script>
 
 
     </div>
-    <script>  
-        function copyTextToClipboard() {
-            // Get the text with line breaks
-            const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
-
-            // Copy the text to the clipboard
-            navigator.clipboard.writeText(textWithLineBreaks)
-                .then(() => {
-                    // Optionally, provide some feedback to the user
-                    document.getElementById('copy-button').style.backgroundColor = 'green';
-                    document.getElementById('copy-button').textContent = 'Copied';
-                })
-                .catch(err => {
-                    console.error('Unable to copy text to clipboard', err);
-                });
-            }
-    </script>
-    <script src="js/newscript.js"></script>
-    <script>
-        new BeforeAfter({
-            id: '#compare1'
-        });
-        new BeforeAfter({
-            id: '#compare2'
-        });
-        new BeforeAfter({
-            id: '#compare3'
-        });
-        new BeforeAfter({
-            id: '#compare4'
-        });
-        new BeforeAfter({
-            id: '#compare5'
-        });
-        new BeforeAfter({
-            id: '#compare6'
-        });
-        new BeforeAfter({
-            id: '#compare7'
-        });
-        new BeforeAfter({
-            id: '#compare8'
-        });
-        new BeforeAfter({
-            id: '#rendering1'
-        });
-        new BeforeAfter({
-            id: '#rendering2'
-        });
-        new BeforeAfter({
-            id: '#rendering3'
-        });
-        new BeforeAfter({
-            id: '#rendering4'
-        });
-        new BeforeAfter({
-            id: '#rendering5'
-        });
-        new BeforeAfter({
-            id: '#rendering6'
-        });
-        new BeforeAfter({
-            id: '#rendering7'
-        });
-        new BeforeAfter({
-            id: '#rendering8'
-        });
-        new BeforeAfter({
-            id: '#rendering9'
-        });
-        new BeforeAfter({
-            id: '#rendering10'
-        });
-    </script>    
 
 </body>
 
