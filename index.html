@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./js/dics/dics.original.css">
     <script src="./js/dics/dics.original.js"></script>
     <script src="./js/event_handler.js"></script>
+    <script src="./js/bulma-carousel.min.js"></script>
+    <script src="./js/bulma-slider.min.js"></script>
 
     <link href="./neural/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
     <link href="./neural/css-1?family=Inconsolata:300,400,500,600,700" rel="stylesheet">
@@ -498,26 +500,86 @@ thin structures.
     }
 </div>
 
-        <script>  
-            function copyTextToClipboard() {
-                // Get the text with line breaks
-                const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
+        
 
-                // Copy the text to the clipboard
-                navigator.clipboard.writeText(textWithLineBreaks)
-                    .then(() => {
-                        // Optionally, provide some feedback to the user
-                        document.getElementById('copy-button').style.backgroundColor = 'green';
-                        document.getElementById('copy-button').textContent = 'Copied';
-                    })
-                    .catch(err => {
-                        console.error('Unable to copy text to clipboard', err);
-                    });
-                }
-        </script>
+        
 
 
     </div>
+    <script>  
+        function copyTextToClipboard() {
+            // Get the text with line breaks
+            const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
+
+            // Copy the text to the clipboard
+            navigator.clipboard.writeText(textWithLineBreaks)
+                .then(() => {
+                    // Optionally, provide some feedback to the user
+                    document.getElementById('copy-button').style.backgroundColor = 'green';
+                    document.getElementById('copy-button').textContent = 'Copied';
+                })
+                .catch(err => {
+                    console.error('Unable to copy text to clipboard', err);
+                });
+            }
+    </script>
+    <script src="js/newscript.js"></script>
+    <script>
+        new BeforeAfter({
+            id: '#compare1'
+        });
+        new BeforeAfter({
+            id: '#compare2'
+        });
+        new BeforeAfter({
+            id: '#compare3'
+        });
+        new BeforeAfter({
+            id: '#compare4'
+        });
+        new BeforeAfter({
+            id: '#compare5'
+        });
+        new BeforeAfter({
+            id: '#compare6'
+        });
+        new BeforeAfter({
+            id: '#compare7'
+        });
+        new BeforeAfter({
+            id: '#compare8'
+        });
+        new BeforeAfter({
+            id: '#rendering1'
+        });
+        new BeforeAfter({
+            id: '#rendering2'
+        });
+        new BeforeAfter({
+            id: '#rendering3'
+        });
+        new BeforeAfter({
+            id: '#rendering4'
+        });
+        new BeforeAfter({
+            id: '#rendering5'
+        });
+        new BeforeAfter({
+            id: '#rendering6'
+        });
+        new BeforeAfter({
+            id: '#rendering7'
+        });
+        new BeforeAfter({
+            id: '#rendering8'
+        });
+        new BeforeAfter({
+            id: '#rendering9'
+        });
+        new BeforeAfter({
+            id: '#rendering10'
+        });
+    </script>    
 
 </body>
 
