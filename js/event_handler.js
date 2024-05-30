@@ -199,6 +199,9 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 7:
                         image.src = './assets/snnir/images/render_bmvs/stone/';
                         break;
+                    case 8:
+                        image.src = './assets/snnir/images/render_bmvs/clock/';
+                        break;
                 }
                 switch (i) {
                     case 0:
