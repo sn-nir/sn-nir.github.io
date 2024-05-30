@@ -9,7 +9,6 @@
 
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel='icon' href='./assets/icons/rnb.png' sizes='472x472'> -->
@@ -26,6 +25,7 @@
     <link href="./neural/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
     <link href="./neural/css-1?family=Inconsolata:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style_neural.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
 </head>
 
 <body lang="en">
@@ -317,6 +317,77 @@ thin structures.
             </div>
             </div>
         </div>
+
+    <h2 class="title is-3">Rendering</h2>
+    <div class="content has-text-justified">
+      <p>
+        Real-time rendering with high-quality underliying geometry.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column is-full-width">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+    
+              <div id="rendering1" class="bal-container-small">
+                <div class="bal-after">
+                  <img src="./assets/snnir/images/render_bmvs/camera/normal.png">
+                  <div class="bal-afterPosition afterLabel">
+                    Normal
+                  </div>
+                </div>
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                  <img src="./assets/snnir/images/render_bmvs/camera/rgb.png">
+                    <div class="bal-beforePosition beforeLabel">
+                      RGB
+                    </div>
+                  </div>
+                </div>
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+              <br/>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full-width">
+        <div class="columns is-centered">
+          <div class="column content">
+
+            <div id="rendering2" class="bal-container-small">
+              <div class="bal-after">
+                <img src="./assets/snnir/images/render_bmvs/man/normal.png">
+                <div class="bal-afterPosition afterLabel">
+                  Normal
+                </div>
+              </div>
+              <div class="bal-before">
+                <div class="bal-before-inset">
+                <img src="./assets/snnir/images/render_bmvs/man/rgb.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    RGB
+                  </div>
+                </div>
+              </div>
+              <div class="bal-handle">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+            </div>
+            <br/>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
         <!-- Relighting video -->
         <!-- <hr style="border-top: 3px double;"> -->
