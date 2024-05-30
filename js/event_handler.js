@@ -182,25 +182,25 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = './assets/snnir/images/render_bmvs/camera/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/render_bmvs/dog/';
+                        image.src = './assets/snnir/images/render_bmvs/clock/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/render_bmvs/durian/';
+                        image.src = './assets/snnir/images/render_bmvs/dog/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/render_bmvs/gundam/';
+                        image.src = './assets/snnir/images/render_bmvs/durian/';
                         break;
                     case 5:
-                        image.src = './assets/snnir/images/render_bmvs/jade/';
+                        image.src = './assets/snnir/images/render_bmvs/gundam/';
                         break;
                     case 6:
-                        image.src = './assets/snnir/images/render_bmvs/man/';
+                        image.src = './assets/snnir/images/render_bmvs/jade/';
                         break;
                     case 7:
-                        image.src = './assets/snnir/images/render_bmvs/stone/';
+                        image.src = './assets/snnir/images/render_bmvs/man/';
                         break;
                     case 8:
-                        image.src = './assets/snnir/images/render_bmvs/clock/';
+                        image.src = './assets/snnir/images/render_bmvs/stone/';
                         break;
                 }
                 switch (i) {
