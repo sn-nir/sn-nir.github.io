@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', domReady);
                 hideTexts: false,
                 textPosition: "top"
             });
+
+            new Dics({
+                container: document.querySelectorAll('.b-dics')[4],
+                hideTexts: false,
+                textPosition: "top"
+            });
         }
 
 
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function updateVisual() {
-            let dics = document.querySelectorAll('.b-dics')[1]
+            let dics = document.querySelectorAll('.b-dics')[2]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 3
             for (let i = 0; i < imagesLength; i++) {
@@ -116,7 +122,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function objectSceneEvent(idx) {
-            let dics = document.querySelectorAll('.b-dics')[0]
+            let dics = document.querySelectorAll('.b-dics')[1]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 3
             for (let i = 0; i < imagesLength; i++) {
@@ -216,7 +222,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function objectSceneEventBMVS(idx) {
-            let dics = document.querySelectorAll('.b-dics')[2]
+            let dics = document.querySelectorAll('.b-dics')[3]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 2
             for (let i = 0; i < imagesLength; i++) {
@@ -260,7 +266,7 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function objectSceneEventDTU(idx) {
-            let dics = document.querySelectorAll('.b-dics')[3]
+            let dics = document.querySelectorAll('.b-dics')[4]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 2
             for (let i = 0; i < imagesLength; i++) {
