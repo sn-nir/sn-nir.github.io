@@ -140,7 +140,6 @@
 thin structures.
         </p>
 		
-        <!-- Comparisons Videos -->
         <hr style="border-top: 3px double;">
         <h5>Rendering Results</h5>
         <h6>Novel view synthesis: Examples of RGB images and their corresponding normal maps rendered, using our approach, from novel views.</h6> 
@@ -156,10 +155,10 @@ thin structures.
                     <a class="nav-link" onclick="objectRenderEvent(2)">Clock</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="objectRenderEvent(3)">Dog</a>
+                    <a class="nav-link active" onclick="objectRenderEvent(3)">Dog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" onclick="objectRenderEvent(4)">Durian</a>
+                    <a class="nav-link" onclick="objectRenderEvent(4)">Durian</a>
                 </li>
 				<li class="nav-item">
                     <a class="nav-link" onclick="objectRenderEvent(5)">Gundam</a>
@@ -176,8 +175,8 @@ thin structures.
             </ul>
             <div class="bordered-container">
             <div class="b-dics" style="width: 100%; font-weight: 600; margin: 0 auto;">
-                <img src="./assets/snnir/images/render_bmvs/durian/rgb.png" alt="RGB">
-                <img src="./assets/snnir/images/render_bmvs/durian/normal.png" alt="Normal">
+                <img src="./assets/snnir/images/render_bmvs/dog/rgb.png" alt="RGB">
+                <img src="./assets/snnir/images/render_bmvs/dog/normal.png" alt="Normal">
             </div>
             </div>
         </div>
@@ -185,43 +184,6 @@ thin structures.
         <hr style="border-top: 3px double;">
         <h5>Reconstruction Results</h5>
 
-        <!-- <h6>Comparisons on DiLiGenT-MV</h6>
-        <p style="text-align: justify;">
-             Qualitative comparisons with the MVPS methods <a href="https://berk95kaya.github.io/UA_MVPS_project_page/">Kaya22</a>, 
-            <a href="https://ywq.github.io/psnerf/">PS-NeRF</a>, 
-            <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhao_MVPSNet_Fast_Generalizable_Multi-view_Photometric_Stereo_ICCV_2023_paper.pdf">MVPSNet</a> 
-            and <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Kaya_Multi-View_Photometric_Stereo_Revisited_WACV_2023_paper.pdf">Kaya23</a>. 
-        </p>
-        
-        <div class="container;" style="padding-bottom: 10px;">
-            <ul class="nav nav-tabs nav-fill nav-justified" id="video-changer">
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo(0)">Bear</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" onclick="changeVideo(1)">Buddha</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo(2)">Cow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo(3)">Pot2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo(4)">Reading</a>
-                </li>
-            </ul>
-            
-            <div>
-                <video id="myVideo" width="100%" class="approach_video" controls="" autoplay="" muted="" loop="">
-                    <source  src="./assets/rnb_neus/videos/cmp/buddha.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div> -->
-
-
-
-        <!-- Comparisons Images -->
         <!-- <hr style="border-top: 3px double;"> -->
         <h6>Comparison on the <a href="https://sites.google.com/site/photometricstereodata/mv">DiLiGenT-MV dataset</a> with 2 views (front and back): Ours (mono-illumination) vs <a href="https://ywq.github.io/psnerf/">PS-NeRF [ECCV 2022]</a> (multi-illumination) vs <a href="https://lingjie0206.github.io/papers/NeuS/">NeuS [NeurIPS 2021]</a> (mono-illumination).</h6>
 
@@ -359,75 +321,6 @@ thin structures.
             </div>
         </div>
 
-        <!-- Relighting video -->
-        <!-- <hr style="border-top: 3px double;"> -->
-<!--         <h6>Relighting with reflectance maps</h6>
-        <p style="text-align: justify;">
-            We provide additional results demonstrating relighting capabilities. 
-            The videos show results under varying lighting conditions, with the reflectance, 
-            roughness and metalness from <a href="https://github.com/satoshi-ikehata/SDM-UniPS-CVPR2023">SDM-UniPS</a> 
-            used to create UV maps aligned with our 3D reconstruction results.
-        </p> 
-        <div class="container;" style="padding-bottom: 10px; width: 70%; margin: 0 auto;">
-            <ul class="nav nav-tabs nav-fill nav-justified" id="video-changer-2">   
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo2(0)">Bear</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo2(1)">Buddha</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo2(2)">Cow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  active" onclick="changeVideo2(3)">Pot2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="changeVideo2(4)">Reading</a>
-                </li>
-            </ul>
-            
-            <div>
-                <video id="myVideo2" width="100%" class="approach_video" controls="" autoplay="" muted="" loop="">
-                    <source  src="./assets/rnb_neus/videos/relighting/pot2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
- -->
-  
-        
-        <!--
-        <hr style="border-top: 3px double;">
-        <h5>Approach</h5>
-        <div class="container; padding-bottom: 10px;">
-            <div>
-                RNb-Neus builds on top of <a href="https://lingjie0206.github.io/papers/NeuS/">SDF-based volume rendering</a>.
-            </div>
-
-            <div>
-                <br>
-                <h6 style="margin-bottom: 30px;">1.&nbsp;&nbsp;Overview</h6>
-
-                <p style="text-align: justify;"">
-                    Given multi-view and multi-light images of an object acquired from N sparse views, 
-                    our proposed methodology employs a two-step process. Initially, it utilizes a Photometric 
-                    Stereo (PS) solution—specifically, SDM-UniPS as detailed in our paper—to derive reflectance 
-                    and albedo maps. Subsequently, we leverage this information to generate simulated data adhering 
-                    to a purely Lambertian model. The subsequent step involves the application of the NeuS architecture.
-                    This architecture facilitates volume rendering employing a Lambertian approach by utilizing the 
-                    normals of the Neural Signed Distance Function (SDF) alongside a network that predicts albedo at 
-                    any spatial point. The optimization process involves minimizing the disparity between our simulated 
-                    images and the rendered images, ultimately yielding a refined Neural SDF that accurately represents 
-                    the object under consideration.
-                </p>
-                
-                <div class="text-center;"" style="padding-top: 30px; padding-bottom: 30px">
-                    <image src="./assets/rnb_neus/images/pipeline.png" class="img-responsive padding-top: 100px" alt="overview">
-                </div>
-            </div>
-        </div>
-		-->
-
         <!-- Citation -->
         <!-- <hr style="border-top: 3px double;">
         <h5>Citation</h5>
@@ -445,44 +338,6 @@ thin structures.
         <!-- <div style="text-align:center;">
             <button id="copy-button" class="copy-button" onclick="copyTextToClipboard()" >Copy</button>
         </div> -->
-
-        <!-- Acknowledgements -->
-<!--         <hr style="border-top: 3px double;">
-        <h5>Acknowledgements</h5>
-        <p style="text-align: justify;">
-            Baptiste Brument's doctoral student fellowship is funded by the French Ministry of Higher Education and Research.
-            Robin Bruneau's doctoral student fellowship is funded by the Danish project PHYLORAMA. This work was partly funded by the French National Research Agency through the LabCom project ALICIA-Vision.
-            Lilian Calvet's postdoctoral fellowship is supported by the OR-X - a Swiss national research infrastructure for translational surgery - and associated funding by the University of Zürich and University Hospital Balgrist.
-        </p> -->
-    </div>
-
-<div id="copyMessage">
-    @inproceedings{Brument23,
-        title={Normal-guided Detail-Preserving Neural Implicit Functions  for High-Fidelity 3D Surface Reconstruction},
-        author={Baptiste Brument and Robin Bruneau and Yvain Quéau and Jean Mélou and François Lauze and Jean-Denis Durou and Lilian Calvet},
-        booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year={2024}
-    }
-</div>
-
-        <script>  
-            function copyTextToClipboard() {
-                // Get the text with line breaks
-                const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
-
-                // Copy the text to the clipboard
-                navigator.clipboard.writeText(textWithLineBreaks)
-                    .then(() => {
-                        // Optionally, provide some feedback to the user
-                        document.getElementById('copy-button').style.backgroundColor = 'green';
-                        document.getElementById('copy-button').textContent = 'Copied';
-                    })
-                    .catch(err => {
-                        console.error('Unable to copy text to clipboard', err);
-                    });
-                }
-        </script>
-
 
     </div>
 
