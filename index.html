@@ -304,7 +304,7 @@ thin structures.
         <h5>Citation</h5>
         <div class="row">
             <div id="citation">
-                @inproceedings{Patel25,<br>
+                @Article{Patel25,<br>
                 &nbsp;&nbsp;title={Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction},<br>
                 &nbsp;&nbsp;author={Patel, Aarya and Laga, Hamid and Sharma, Ojaswa},<br>
                 &nbsp;&nbsp;journal = {Proceedings of the ACM on Computer Graphics and Interactive Techniques},<br>
@@ -316,8 +316,53 @@ thin structures.
                 }
             </div> 
         </div>
+        <div style="text-align:center;">
+            <button id="copy-button" class="copy-button" onclick="copyTextToClipboard()" >Copy</button>
+        </div>
+
+        <!-- Acknowledgements -->
+        <hr style="border-top: 3px double;">
+        <h5>Acknowledgements</h5>
+        <p style="text-align: justify;">
+            Aarya Patel is funded by the Prime Minister's Fellowship for Doctoral Research, jointly supported by the Science \& Engineering Research Board (SERB), Department of Science and Technology (DST), Government of India, and Dolby Laboratories India. Hamid Laga is supported in part by the Australian Research Council (ARC) Discovery Grant no. DP220102197.
+        </p>
 
     </div>
+
+    <div id="copyMessage">
+        @Article{Patel25,
+            title={Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction},
+            author={Patel, Aarya and Laga, Hamid and Sharma, Ojaswa},
+            journal = {Proceedings of the ACM on Computer Graphics and Interactive Techniques},
+            number = {1},
+            volume = {8},
+            article = {12},
+            month = {May},
+            year={2025}
+          }
+    </div>
+    
+            <script>  
+                function copyTextToClipboard() {
+                    // Get the text with line breaks
+                    const textWithLineBreaks = document.getElementById('copyMessage').innerHTML;
+    
+                    // Copy the text to the clipboard
+                    navigator.clipboard.writeText(textWithLineBreaks)
+                        .then(() => {
+                            // Optionally, provide some feedback to the user
+                            document.getElementById('copy-button').style.backgroundColor = 'green';
+                            document.getElementById('copy-button').textContent = 'Copied';
+                        })
+                        .catch(err => {
+                            console.error('Unable to copy text to clipboard', err);
+                        });
+                    }
+            </script>
+    
+    
+        </div>
+    
 
 </body>
 
